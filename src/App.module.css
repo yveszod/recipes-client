@@ -27,10 +27,10 @@ img{
 }
 
 .app-collection{
-  flex: 0 0 65%;
+  flex: 0 0 100%;
 }
 .app-form{
-  flex: 0 0 35%;
+  flex: 0 0 100%;
 }
 /*
   Scroll Bar
@@ -53,4 +53,13 @@ img{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: none;
+}
+
+@media screen and (min-width: 768px){
+  .app-collection{
+    flex: 0 0 65%;
+  }
+  .app-form{
+    flex: 0 0 35%;
+  }
 }
